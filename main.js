@@ -38,14 +38,14 @@ class MenuScene extends Phaser.Scene {
   constructor() { super("MenuScene"); }
 
   preload() {
-    this.load.image('menu_bg', 'assets/menu_bg.png');
-    this.load.image('spark', 'assets/spark.png');
-    this.load.image('logo', 'assets/logo.png');
-    this.load.audio('bgMusic', 'assets/background.mp3');
-    this.load.image('muteIcon', 'assets/mute.png');     // ses kapalı ikonu
-    this.load.image('unmuteIcon', 'assets/unmute.png'); // ses açık ikonu
+  this.load.image('menu_bg', 'assets/menu_bg.PNG');
+  this.load.image('spark', 'assets/spark.png');
+  this.load.image('logo', 'assets/logo.PNG');
+  this.load.audio('bgMusic', 'assets/background.mp3');
+  this.load.image('muteIcon', 'assets/mutee.PNG');     // dosya adı "mutee.PNG"
+  this.load.image('unmuteIcon', 'assets/unmute.PNG');  // "unmute.PNG"
+}
 
-  }
 
   create() {
     this.add.image(0, 0, 'menu_bg')
@@ -197,11 +197,12 @@ class CharacterScene extends Phaser.Scene {
   constructor() { super("CharacterScene"); }
 
   preload() {
-    this.load.image('character_bg', 'assets/character_select_background.png');
-    this.load.image('bitcoin_char', 'assets/bitcoin_char.png');
-    this.load.image('ethereum_char', 'assets/ethereum_char.png');
-    this.load.image('doge_char', 'assets/doge_char.png');
-  }
+  this.load.image('character_bg', 'assets/character_select_background.PNG');
+  this.load.image('bitcoin_char', 'assets/bitcoin_char.png');
+  this.load.image('ethereum_char', 'assets/ethereum_char.png');
+  this.load.image('doge_char', 'assets/doge_char.png');
+}
+
 
   create() {
     this.add.image(600, 384, 'character_bg').setDisplaySize(1200, 768);
@@ -255,19 +256,20 @@ class MainScene extends Phaser.Scene {
   init(data) { this.charKey = data.char || 'bitcoin_char'; }
 
   preload() {
-    this.load.image('coin', 'assets/coin.png');
-    this.load.image('obstacle', 'assets/obstacle.png');
-    this.load.image('bg', 'assets/game_bg.png');
-    this.load.image('bitcoin_char', 'assets/bitcoin_char.png');
-    this.load.image('ethereum_char', 'assets/ethereum_char.png');
-    this.load.image('doge_char', 'assets/doge_char.png');
-    this.load.image('big_reward1', 'assets/big_reward.png');
-    this.load.image('big_reward2', 'assets/big_reward2.png');
-    this.load.image('heart', 'assets/heart.png');
-    this.load.image('spark', 'assets/spark.png');
-    this.load.image('magnet', 'assets/magnet.png');
-    this.load.image('shield', 'assets/shield.png');
-  }
+  this.load.image('coin', 'assets/coin.PNG');
+  this.load.image('obstacle', 'assets/obstacle.png');
+  this.load.image('bg', 'assets/game_bg.PNG');
+  this.load.image('bitcoin_char', 'assets/bitcoin_char.png');
+  this.load.image('ethereum_char', 'assets/ethereum_char.png');
+  this.load.image('doge_char', 'assets/doge_char.png');
+  this.load.image('big_reward1', 'assets/big_reward.png');
+  this.load.image('big_reward2', 'assets/big_reward2.png');
+  this.load.image('heart', 'assets/heart.png');
+  this.load.image('spark', 'assets/spark.png');
+  this.load.image('magnet', 'assets/magnet.png');
+  this.load.image('shield', 'assets/shield.png');
+}
+
 
   create() {
     this.add.image(0, 0, 'bg')
