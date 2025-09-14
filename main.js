@@ -164,7 +164,7 @@ makeButton(this.sys.game.config.width / 2, 500, "▶ START GAME", () => {
       fill: "#ffffff"
     });
 
-    this.add.text(20, this.sys.game.config.height - 20, "Developed by Cryptovorlaxis", {
+    this.add.text(20, this.sys.game.config.height - 20, "Developed by Cryptoeisenheim", {
       fontFamily: '"Orbitron", sans-serif',
       fontSize: "16px",
       fill: "#ffffff"
